@@ -1,38 +1,7 @@
-class Animal:
-    def __init__(self, name):
-        self.name = name
+import os
 
-    def eat(self):
-        return f"{self.name} is eating!"
-    
-    def run(self):
-        return f"{self.name} is running!"
-    
-    def jump(self):
-        return f"{self.name} is jumping!"
+# Read from environment
+api_key = os.environ.get('API_KEY')
+database = os.environ.get('DATABASE_NAME', 'default.db')
 
-class Dog(Animal):
-    def bark(self):
-        return f"{self.name} is barking!"
-    
-class Wolf(Dog):
-    def howl(self):
-        return f"{self.name} is howling!"
-    
-class Lion(Animal):
-    def roar(self):
-     return f"{self.name} is roaring!"
-
-jerry = Dog(name="Jerry")
-jerry.bark()
-jerry.run()
-
-diasy = Wolf(name="Diasy")
-diasy.bark()
-diasy.howl()
-
-simba = Lion(name="Simba")
-simba.roar()
-
-nala = Lion(name="Nala")
-nala.roar()
+print(f"Using database: {api_key}")
