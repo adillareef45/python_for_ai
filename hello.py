@@ -19,6 +19,9 @@ class Wolf(Dog):
     def howl(self):
         return f"{self.name} is howling!"
     
+class Lion(Animal):
+    def roar(self):
+     return f"{self.name} is roaring!"
 
 jerry = Dog(name="Jerry")
 jerry.bark()
@@ -27,3 +30,6 @@ jerry.run()
 diasy = Wolf(name="Diasy")
 diasy.bark()
 diasy.howl()
+
+simba = Lion(name="Simba")
+simba.roar()
