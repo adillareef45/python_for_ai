@@ -33,3 +33,6 @@ diasy.howl()
 
 simba = Lion(name="Simba")
 simba.roar()
+
+nala = Lion(name="Nala")
+Nala.roar()
